@@ -3,6 +3,12 @@
 ## Next
 
 - Write Todos
+- Setup index.html with boilerplate items
+- build stub show data
+- Deploy version 0.1, beta
+- Build real API with stubbed data
+- Build real DB
+- Connect DB to API to serve real data
 - Deploy version 1.0
 
 ## Done
