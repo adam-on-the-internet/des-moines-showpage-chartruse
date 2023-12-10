@@ -4,6 +4,7 @@
 
 - Write Todos
 - Setup index.html with boilerplate items
+- Add current date/time to homepage
 - build stub show data
 - Deploy version 0.1, beta
 - Build real API with stubbed data
