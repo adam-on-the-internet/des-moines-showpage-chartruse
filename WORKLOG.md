@@ -11,8 +11,9 @@
     - added first show entry through API
     - deleted first show entry through API
     - edited first show entry through API
-- Next Up...
+- 7/25/24 - Adam C - 9:00pm-10:00pm (1:00)
     - Load show list "all" into website
+- Next Up...
     - Click into single show
     - Show shows based on date "upcoming"
     - Show shows based on date "past"

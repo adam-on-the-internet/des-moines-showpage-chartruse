@@ -53,6 +53,13 @@ function addShowContent(showDisplayContent, show, allVenues) {
             </p>
         `;
     }
+    if (show._id) {
+        showDisplayContent += `
+            <p>
+                <a href="/des_moines_showpage/show.html?show=${show._id}">More Details</a>
+            </p>
+        `;
+    }
     return showDisplayContent;
 }
 
