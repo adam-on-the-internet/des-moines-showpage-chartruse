@@ -1,3 +1,4 @@
+const host = "https://aoti-basic-express-app.herokuapp.com";
 
 function addContentToDiv(id, content) {
     const newDiv = document.createElement('div');
@@ -8,20 +9,19 @@ function addContentToDiv(id, content) {
 function loadAllVenues() {
     const venueListURL = "./data/venue-list.json";
     $.getJSON(venueListURL, function (allVenues) {
-        loadAllShows(allVenues);
+        loadUpcomingShows(allVenues);
+        loadAllShowsInDesMoines(allVenues);
     });
 }
 
-function loadAllShows(allVenues) {
+function loadUpcomingShows(allVenues) {
     const showListURL = "./data/show-list.json";
-    $.getJSON(showListURL, function (allShows) {
-        // TODO filter down to only upcoming shows, instead of just copying whole list
-        const upcomingShows = allShows;
+    $.getJSON(showListURL, function (upcomingShows) {
         setupUpcomingShows(upcomingShows, allVenues);
     });
 }
 
-function addUpcomingShowContent(upcomingShowsDisplayContent, show, allVenues) {
+function addShowContent(showDisplayContent, show, allVenues) {
     let matchingVenue = null;
     for (let i = 0; i < allVenues.length; i++) {
         const venue = allVenues[i];
@@ -29,7 +29,7 @@ function addUpcomingShowContent(upcomingShowsDisplayContent, show, allVenues) {
             matchingVenue = venue;
         }
     }
-    upcomingShowsDisplayContent += `
+    showDisplayContent += `
         <hr>
         <p>
             ${show.date}
@@ -39,7 +39,7 @@ function addUpcomingShowContent(upcomingShowsDisplayContent, show, allVenues) {
         </p>
     `;
     if (matchingVenue !== null) {
-        upcomingShowsDisplayContent += `
+        showDisplayContent += `
             <p>
                 <a href="${matchingVenue.url}" target="_blank">
                     ${matchingVenue.name}
@@ -47,30 +47,47 @@ function addUpcomingShowContent(upcomingShowsDisplayContent, show, allVenues) {
             </p>
         `;
     } else {
-        upcomingShowsDisplayContent += `
+        showDisplayContent += `
             <p>
                 ${show.venue}
             </p>
         `;
     }
-    return upcomingShowsDisplayContent;
+    return showDisplayContent;
 }
 
-function buildUpcomingShowsContent(upcomingShows, allVenues) {
-    let upcomingShowsDisplayContent = "";
-    for (let i = 0; i < upcomingShows.length; i++) {
-        const show = upcomingShows[i];
-        upcomingShowsDisplayContent = addUpcomingShowContent(upcomingShowsDisplayContent, show, allVenues);
+function buildShowsContentWithVenueDetails(shows, allVenues) {
+    let showsDisplayContent = "";
+    for (let i = 0; i < shows.length; i++) {
+        const show = shows[i];
+        showsDisplayContent = addShowContent(showsDisplayContent, show, allVenues);
     }
-    return upcomingShowsDisplayContent;
+    return showsDisplayContent;
+}
+
+function setupAllShows(allShows, allVenues) {
+    const allShowsDisplayContent = buildShowsContentWithVenueDetails(allShows, allVenues);
+    const allShowsDisplayId = 'all-shows-display';
+    addContentToDiv(allShowsDisplayId, allShowsDisplayContent);
 }
 
 function setupUpcomingShows(upcomingShows, allVenues) {
-    const upcomingShowsDisplayContent = buildUpcomingShowsContent(upcomingShows, allVenues);
+    const upcomingShowsDisplayContent = buildShowsContentWithVenueDetails(upcomingShows, allVenues);
     const upcomingShowsDisplayId = 'upcoming-shows-display';
     addContentToDiv(upcomingShowsDisplayId, upcomingShowsDisplayContent);
 }
 
+function loadCurrentDateTimeInDesMoines() {
+//    TODO load current datetime
+}
+
+async function loadAllShowsInDesMoines(allVenues) {
+    const allShowsResponse = await fetch(`${host}/show`);
+    const allShows = await allShowsResponse.json();
+    setupAllShows(allShows, allVenues)
+}
+
 $(document).ready(function () {
     loadAllVenues();
+    loadCurrentDateTimeInDesMoines();
 });
