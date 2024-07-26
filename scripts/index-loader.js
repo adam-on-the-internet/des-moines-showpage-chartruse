@@ -14,13 +14,6 @@ function loadAllVenues() {
     });
 }
 
-function loadUpcomingShows(allVenues) {
-    const showListURL = "./data/show-list.json";
-    $.getJSON(showListURL, function (upcomingShows) {
-        setupUpcomingShows(upcomingShows, allVenues);
-    });
-}
-
 function addShowContent(showDisplayContent, show, allVenues) {
     let matchingVenue = null;
     for (let i = 0; i < allVenues.length; i++) {
@@ -84,8 +77,23 @@ function setupUpcomingShows(upcomingShows, allVenues) {
     addContentToDiv(upcomingShowsDisplayId, upcomingShowsDisplayContent);
 }
 
-function loadCurrentDateTimeInDesMoines() {
-//    TODO load current datetime
+async function loadCurrentDateTimeInDesMoines() {
+    const desMoinesDatetimeResponse = await fetch(`${host}/show/des-moines-datetime`);
+    const desMoinesDatetime = await desMoinesDatetimeResponse.json();
+    console.log(desMoinesDatetime);
+    const desMoinesDatetimeContent = `
+        <p>
+            Current Des Moines Date & Time: ${desMoinesDatetime.rawDate}
+        </p>
+    `;
+    const desMoinesDatetimeId = "des-moines-datetime";
+    addContentToDiv(desMoinesDatetimeId, desMoinesDatetimeContent);
+}
+
+async function loadUpcomingShows(allVenues) {
+    const upcomingShowsResponse = await fetch(`${host}/show/upcoming`);
+    const upcomingShows = await upcomingShowsResponse.json();
+    setupUpcomingShows(upcomingShows, allVenues)
 }
 
 async function loadAllShowsInDesMoines(allVenues) {
