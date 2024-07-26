@@ -11,16 +11,19 @@
     - added first show entry through API
     - deleted first show entry through API
     - edited first show entry through API
-- 7/25/24 - Adam C - 9:00pm-10:00pm (1:00)
+- 7/25/24 - Adam C - 9:00pm-10:30pm (1:30)
     - Load show list "all" into website from API
     - Begin Single Show page with data from API
     - Begin calculating Des Moines Datetime in API, and using in UI
     - Begin loading "upcoming shows" from API
+    - Begin date filter for upcoming shows in API
 - Next Up...
+    - Make date filter in API work correctly for upcoming shows (give shows today + 2 weeks)
+    - Index Page should show ONLY upcoming shows
+    - New "all" shows page
+    - Single show page
+    - Footer buildout
     - Manage Venue List in API, return to UI as well
-    - Click into single show
-    - Show shows based on date "upcoming"
-    - Show shows based on date "past"
     - Add more Show fields
     - Add show through UI
     - Edit show through UI
