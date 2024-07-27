@@ -1,67 +1,10 @@
-const host = "https://aoti-basic-express-app.herokuapp.com";
+import {buildCurrentDatetimeComponent, buildFooterComponent} from "./shared-components.js"
+import {retrieveAllShowsInDesMoines, retrieveVenues} from "./rest-util.js"
+import {addContentToDiv, buildShowsContentWithVenueDetails} from "./document-builder.js"
 
-function addContentToDiv(id, content) {
-    const newDiv = document.createElement('div');
-    newDiv.innerHTML = content;
-    document.getElementById(id).appendChild(newDiv);
-}
-
-function loadAllVenues() {
-    const venueListURL = "./data/venue-list.json";
-    $.getJSON(venueListURL, function (allVenues) {
-        loadAllShowsInDesMoines(allVenues);
-    });
-}
-
-function addShowContent(showDisplayContent, show, allVenues) {
-    let matchingVenue = null;
-    for (let i = 0; i < allVenues.length; i++) {
-        const venue = allVenues[i];
-        if (venue.name === show.venue) {
-            matchingVenue = venue;
-        }
-    }
-    showDisplayContent += `
-        <hr>
-        <p>
-            ${show.date}
-        </p>
-        <p>
-            ${show.title}
-        </p>
-    `;
-    if (matchingVenue !== null) {
-        showDisplayContent += `
-            <p>
-                <a href="${matchingVenue.url}" target="_blank">
-                    ${matchingVenue.name}
-                </a>
-            </p>
-        `;
-    } else {
-        showDisplayContent += `
-            <p>
-                ${show.venue}
-            </p>
-        `;
-    }
-    if (show._id) {
-        showDisplayContent += `
-            <p>
-                <a href="/des_moines_showpage/show.html?show=${show._id}">More Details</a>
-            </p>
-        `;
-    }
-    return showDisplayContent;
-}
-
-function buildShowsContentWithVenueDetails(shows, allVenues) {
-    let showsDisplayContent = "";
-    for (let i = 0; i < shows.length; i++) {
-        const show = shows[i];
-        showsDisplayContent = addShowContent(showsDisplayContent, show, allVenues);
-    }
-    return showsDisplayContent;
+async function loadAllVenues() {
+    const venues = await retrieveVenues();
+    setupAllShowsInDesMoines(venues);
 }
 
 function setupAllShows(allShows, allVenues) {
@@ -70,26 +13,13 @@ function setupAllShows(allShows, allVenues) {
     addContentToDiv(allShowsDisplayId, allShowsDisplayContent);
 }
 
-async function loadCurrentDateTimeInDesMoines() {
-    const desMoinesDatetimeResponse = await fetch(`${host}/show/des-moines-datetime`);
-    const desMoinesDatetime = await desMoinesDatetimeResponse.json();
-    console.log(desMoinesDatetime);
-    const desMoinesDatetimeContent = `
-        <p>
-            Current Des Moines Date & Time: ${desMoinesDatetime.rawDate}
-        </p>
-    `;
-    const desMoinesDatetimeId = "des-moines-datetime";
-    addContentToDiv(desMoinesDatetimeId, desMoinesDatetimeContent);
-}
-
-async function loadAllShowsInDesMoines(allVenues) {
-    const allShowsResponse = await fetch(`${host}/show`);
-    const allShows = await allShowsResponse.json();
-    setupAllShows(allShows, allVenues)
+async function setupAllShowsInDesMoines(venues) {
+    const allShows = await retrieveAllShowsInDesMoines();
+    setupAllShows(allShows, venues);
 }
 
 $(document).ready(function () {
     loadAllVenues();
-    loadCurrentDateTimeInDesMoines();
+    buildCurrentDatetimeComponent();
+    buildFooterComponent();
 });

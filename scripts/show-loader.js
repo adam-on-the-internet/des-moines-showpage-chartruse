@@ -1,19 +1,20 @@
-const host = "https://aoti-basic-express-app.herokuapp.com";
+import {buildFooterComponent, buildCurrentDatetimeComponent} from "./shared-components.js"
+import {retrieveShowDetails} from "./rest-util.js"
+import {fetchParam} from "./query-param-util.js"
 
 function loadShowIdParam() {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const showId = urlParams.get('show')
+    const showId = fetchParam("show")
     loadShowDetails(showId);
 }
 
 async function loadShowDetails(showId) {
-    const showResponse = await fetch(`${host}/show/${showId}`);
-    const show = await showResponse.json();
+    const show = await retrieveShowDetails(showId)
     console.log(show);
 //    TODO actually use show details in webpage
 }
 
 $(document).ready(function () {
     loadShowIdParam();
+    buildCurrentDatetimeComponent();
+    buildFooterComponent();
 });
