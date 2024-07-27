@@ -9,7 +9,7 @@ function addContentToDiv(id, content) {
 function loadAllVenues() {
     const venueListURL = "./data/venue-list.json";
     $.getJSON(venueListURL, function (allVenues) {
-        loadUpcomingShows(allVenues);
+        loadAllShowsInDesMoines(allVenues);
     });
 }
 
@@ -64,10 +64,10 @@ function buildShowsContentWithVenueDetails(shows, allVenues) {
     return showsDisplayContent;
 }
 
-function setupUpcomingShows(upcomingShows, allVenues) {
-    const upcomingShowsDisplayContent = buildShowsContentWithVenueDetails(upcomingShows, allVenues);
-    const upcomingShowsDisplayId = 'upcoming-shows-display';
-    addContentToDiv(upcomingShowsDisplayId, upcomingShowsDisplayContent);
+function setupAllShows(allShows, allVenues) {
+    const allShowsDisplayContent = buildShowsContentWithVenueDetails(allShows, allVenues);
+    const allShowsDisplayId = 'all-shows-display';
+    addContentToDiv(allShowsDisplayId, allShowsDisplayContent);
 }
 
 async function loadCurrentDateTimeInDesMoines() {
@@ -83,10 +83,10 @@ async function loadCurrentDateTimeInDesMoines() {
     addContentToDiv(desMoinesDatetimeId, desMoinesDatetimeContent);
 }
 
-async function loadUpcomingShows(allVenues) {
-    const upcomingShowsResponse = await fetch(`${host}/show/upcoming`);
-    const upcomingShows = await upcomingShowsResponse.json();
-    setupUpcomingShows(upcomingShows, allVenues);
+async function loadAllShowsInDesMoines(allVenues) {
+    const allShowsResponse = await fetch(`${host}/show`);
+    const allShows = await allShowsResponse.json();
+    setupAllShows(allShows, allVenues)
 }
 
 $(document).ready(function () {

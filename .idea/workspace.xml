@@ -10,7 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b4875db-37c7-4680-86ba-99d8b217aa89" name="Default Changelist" comment="" />
+    <list default="true" id="9b4875db-37c7-4680-86ba-99d8b217aa89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/all-shows.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/about-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/all-shows-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/show-list.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index-loader.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,8 +37,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git\des_moines_showpage\scripts" />
+      <recent name="C:\git\des_moines_showpage" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -47,7 +62,8 @@
       <workItem from="1705381866729" duration="2980000" />
       <workItem from="1705625441588" duration="7000" />
       <workItem from="1721875010247" duration="2259000" />
-      <workItem from="1721961897280" duration="3612000" />
+      <workItem from="1721961897280" duration="3865000" />
+      <workItem from="1722049931106" duration="348000" />
     </task>
     <servers />
   </component>
@@ -65,5 +81,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="391" y="81" width="583" height="566" key="find.popup" timestamp="1722050188961">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="81" width="583" height="566" key="find.popup/0.0.1366.728/-1280.-181.1280.984@0.0.1366.728" timestamp="1722050188961" />
   </component>
 </project>
