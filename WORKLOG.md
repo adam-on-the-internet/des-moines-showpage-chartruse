@@ -17,14 +17,18 @@
     - Begin calculating Des Moines Datetime in API, and using in UI
     - Begin loading "upcoming shows" from API
     - Begin date filter for upcoming shows in API
+- 7/26/24 - Adam C - 10:00pm-10:45pm (0:45)
+    - Reorganize JS files to share reusable code
+    - Create separate pages for upcoming shows (home page), all shows, about
+    - Some boilerplate ABOUT text
 - Next Up...
     - Make date filter in API work correctly for upcoming shows (give shows today + 2 weeks)
-    - Index Page should show ONLY upcoming shows
     - New "all" shows page
     - Single show page
-    - Footer buildout
+    - Add to Footer
+    - About page text
     - Manage Venue List in API, return to UI as well
-    - Add more Show fields
+    - Add more Show fields (showtime, doortime, cost, ages, genre, flyer link, show link, band links, bands)
     - Add show through UI
     - Edit show through UI
     - Delete show through UI
