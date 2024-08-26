@@ -15,7 +15,7 @@ export function addShowContent(showDisplayContent, show, venues) {
     showDisplayContent += `
         <hr>
         <p>
-            ${show.date}
+            ${show.showDateMonthName} ${show.showDateDay}, ${show.showDateYear} at ${show.showDateHour}:${show.showDateMinute}${show.showAmOrPm}
         </p>
         <p>
             ${show.title}

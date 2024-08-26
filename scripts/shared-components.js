@@ -24,7 +24,10 @@ export async function buildCurrentDatetimeComponent() {
     console.log(desMoinesDatetime);
     const desMoinesDatetimeContent = `
         <p>
-            Current Des Moines Date & Time: ${desMoinesDatetime.rawDate}
+            Current Des Moines Date & Time: ${desMoinesDatetime.rawDateCurrent}
+        </p>
+        <p>
+            One Month Out Des Moines Date & Time: ${desMoinesDatetime.rawDateOneMonthOut}
         </p>
     `;
     const desMoinesDatetimeId = "des-moines-datetime";

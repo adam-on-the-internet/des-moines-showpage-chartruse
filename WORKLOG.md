@@ -21,8 +21,10 @@
     - Reorganize JS files to share reusable code
     - Create separate pages for upcoming shows (home page), all shows, about
     - Some boilerplate ABOUT text
+- 8/25/24 - Adam C - 9:00pm-11:00pm (2:00)
+    - Add date filters in API to return show lists based on date
+    - Built out display date/time in UI
 - Next Up...
-    - Make date filter in API work correctly for upcoming shows (give shows today + 2 weeks)
     - New "all" shows page
     - Single show page
     - Add to Footer
