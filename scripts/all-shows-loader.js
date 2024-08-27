@@ -1,4 +1,4 @@
-import {buildCurrentDatetimeComponent, buildFooterComponent} from "./shared-components.js"
+import {buildFooterComponent} from "./shared-components.js"
 import {retrieveAllShowsInDesMoines, retrieveVenues} from "./rest-util.js"
 import {addContentToDiv, buildShowsContentWithVenueDetails} from "./document-builder.js"
 
@@ -20,6 +20,5 @@ async function setupAllShowsInDesMoines(venues) {
 
 $(document).ready(function () {
     loadAllVenues();
-    buildCurrentDatetimeComponent();
     buildFooterComponent();
 });

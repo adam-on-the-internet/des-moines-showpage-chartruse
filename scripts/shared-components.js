@@ -1,7 +1,7 @@
-import {retrieveLocalDatetime} from "./rest-util.js"
 import {addContentToDiv} from "./document-builder.js"
 
 export async function buildFooterComponent() {
+    const currentYear = new Date().getFullYear();
     const footerContent = `
         <hr>
         <p>
@@ -14,22 +14,11 @@ export async function buildFooterComponent() {
             <a href="/des_moines_showpage/about.html">About</a>
         </p>
         <hr>
-        Footer Text Here`
+        <p>
+            <a href="https://www.adamontheinternet.com" target="_blank">
+            © Adam on the Internet ${currentYear} 
+            </a>
+        </p>`
     const footerId = "footer";
     addContentToDiv(footerId, footerContent);
-}
-
-export async function buildCurrentDatetimeComponent() {
-    const desMoinesDatetime = await retrieveLocalDatetime();
-    console.log(desMoinesDatetime);
-    const desMoinesDatetimeContent = `
-        <p>
-            Current Des Moines Date & Time: ${desMoinesDatetime.rawDateCurrent}
-        </p>
-        <p>
-            One Month Out Des Moines Date & Time: ${desMoinesDatetime.rawDateOneMonthOut}
-        </p>
-    `;
-    const desMoinesDatetimeId = "des-moines-datetime";
-    addContentToDiv(desMoinesDatetimeId, desMoinesDatetimeContent);
 }

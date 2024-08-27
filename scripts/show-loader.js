@@ -1,4 +1,4 @@
-import {buildFooterComponent, buildCurrentDatetimeComponent} from "./shared-components.js"
+import {buildFooterComponent} from "./shared-components.js"
 import {retrieveShowDetails} from "./rest-util.js"
 import {fetchParam} from "./query-param-util.js"
 
@@ -15,6 +15,5 @@ async function loadShowDetails(showId) {
 
 $(document).ready(function () {
     loadShowIdParam();
-    buildCurrentDatetimeComponent();
     buildFooterComponent();
 });

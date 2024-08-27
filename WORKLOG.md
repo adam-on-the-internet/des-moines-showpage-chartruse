@@ -24,6 +24,10 @@
 - 8/25/24 - Adam C - 9:00pm-11:00pm (2:00)
     - Add date filters in API to return show lists based on date
     - Built out display date/time in UI
+- 8/26/24 - Adam C - 10:30pm-?
+    - Adding new optional fields to the Show model, and allowing Create API call with the new fields
+    - Deleting mock data, beginning to add real data
+    - 
 - Next Up...
     - New "all" shows page
     - Single show page

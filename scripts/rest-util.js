@@ -27,7 +27,12 @@ export async function retrieveVenues() {
             "name": "xBk",
             "url": "https://xbklive.com/",
             "address": "1159 24th Street, Des Moines, IA 50311"
-        }
+        },
+        {
+            "name": "the LiFT",
+            "url": "https://www.dmlift.com/",
+            "address": "222 4th Street, Des Moines, IA 50309"
+        },
     ];
 }
 

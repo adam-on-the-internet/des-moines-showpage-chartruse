@@ -5,6 +5,53 @@ export function addContentToDiv(id, content) {
 }
 
 export function addShowContent(showDisplayContent, show, venues) {
+    showDisplayContent += `<hr>`;
+    showDisplayContent = addParagraphIfExists(showDisplayContent, show.title, show.title)
+    showDisplayContent = addParagraphIfExists(showDisplayContent, show.subtitle, show.subtitle)
+    showDisplayContent = addParagraphIfExists(showDisplayContent, show.showDateDisplay, show.showDateDisplay)
+    showDisplayContent = addParagraphIfExists(showDisplayContent, show.showTimeDisplay, "Show: " + show.showTimeDisplay)
+    showDisplayContent = addParagraphIfExists(showDisplayContent, show.doorDateDisplay, "Doors: " + show.doorDateDisplay)
+
+    const matchingVenue = getMatchingVenue(venues, show);
+    if (matchingVenue !== null) {
+        showDisplayContent = addParagraphLinkIfExists(showDisplayContent, matchingVenue.url, matchingVenue.url, matchingVenue.name)
+    } else {
+        showDisplayContent = addParagraphIfExists(showDisplayContent, show.venue, show.venue)
+    }
+
+    showDisplayContent = addParagraphIfExists(showDisplayContent, show.ageLimit, show.ageLimit)
+    showDisplayContent = addParagraphIfExists(showDisplayContent, show.ticketPrice, show.ticketPrice)
+    showDisplayContent = addParagraphIfExists(showDisplayContent, show.genre, show.genre)
+    showDisplayContent = addParagraphLinkIfExists(showDisplayContent, show.showDetailsURL, show.showDetailsURL, "Show Details")
+    showDisplayContent = addParagraphLinkIfExists(showDisplayContent, show._id, `/des_moines_showpage/show.html?show=${show._id}`, "More Details")
+    return showDisplayContent;
+}
+
+function addParagraphIfExists(originalContent, field, newContent) {
+    if (field) {
+        return originalContent + `
+            <p>
+               ${newContent}
+            </p>
+        `;
+    }
+    return originalContent
+}
+
+function addParagraphLinkIfExists(originalContent, field, link, text) {
+    if (field) {
+        return originalContent + `
+            <p>
+                <a href="${link}" target="_blank">
+                    ${text}
+                </a>
+            </p>
+        `;
+    }
+    return originalContent
+}
+
+function getMatchingVenue(venues, show) {
     let matchingVenue = null;
     for (let i = 0; i < venues.length; i++) {
         const venue = venues[i];
@@ -12,38 +59,7 @@ export function addShowContent(showDisplayContent, show, venues) {
             matchingVenue = venue;
         }
     }
-    showDisplayContent += `
-        <hr>
-        <p>
-            ${show.showDateMonthName} ${show.showDateDay}, ${show.showDateYear} at ${show.showDateHour}:${show.showDateMinute}${show.showAmOrPm}
-        </p>
-        <p>
-            ${show.title}
-        </p>
-    `;
-    if (matchingVenue !== null) {
-        showDisplayContent += `
-            <p>
-                <a href="${matchingVenue.url}" target="_blank">
-                    ${matchingVenue.name}
-                </a>
-            </p>
-        `;
-    } else {
-        showDisplayContent += `
-            <p>
-                ${show.venue}
-            </p>
-        `;
-    }
-    if (show._id) {
-        showDisplayContent += `
-            <p>
-                <a href="/des_moines_showpage/show.html?show=${show._id}">More Details</a>
-            </p>
-        `;
-    }
-    return showDisplayContent;
+    return matchingVenue;
 }
 
 export function buildShowsContentWithVenueDetails(shows, venues) {
