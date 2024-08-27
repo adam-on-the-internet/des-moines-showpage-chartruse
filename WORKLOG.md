@@ -24,17 +24,19 @@
 - 8/25/24 - Adam C - 9:00pm-11:00pm (2:00)
     - Add date filters in API to return show lists based on date
     - Built out display date/time in UI
-- 8/26/24 - Adam C - 10:30pm-?
+- 8/26/24 - Adam C - 10:20pm-11:50pm (1:30)
     - Adding new optional fields to the Show model, and allowing Create API call with the new fields
     - Deleting mock data, beginning to add real data
-    - 
+    - Add UI display for new optional details
+    - Rework UI footer
+    - Remove Date Debug UI Header
 - Next Up...
     - New "all" shows page
     - Single show page
-    - Add to Footer
+    - Donate page
     - About page text
     - Manage Venue List in API, return to UI as well
-    - Add more Show fields (showtime, doortime, cost, ages, genre, flyer link, show link, band links, bands)
+    - Add more Show fields (flyer link, show link, band links, bands)
     - Add show through UI
     - Edit show through UI
     - Delete show through UI
