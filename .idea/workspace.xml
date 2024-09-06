@@ -12,14 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b4875db-37c7-4680-86ba-99d8b217aa89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WORKLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORKLOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/about-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/about-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/all-shows-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/all-shows-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/document-builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/document-builder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/rest-util.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/rest-util.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/shared-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/shared-components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/show-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/show-loader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +61,9 @@
       <workItem from="1723778019910" duration="24000" />
       <workItem from="1724085722362" duration="154000" />
       <workItem from="1724640854633" duration="2729000" />
-      <workItem from="1724732193548" duration="2152000" />
+      <workItem from="1724732193548" duration="2575000" />
+      <workItem from="1725418840686" duration="44000" />
+      <workItem from="1725592679674" duration="30000" />
     </task>
     <servers />
   </component>
@@ -88,10 +83,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="391" y="81" width="583" height="624" key="find.popup" timestamp="1724732883974">
+    <state x="391" y="81" width="583" height="624" key="find.popup" timestamp="1724734442228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="81" width="583" height="624" key="find.popup/0.0.1366.728/-1280.-181.1280.984@0.0.1366.728" timestamp="1724644068197" />
-    <state x="391" y="81" width="583" height="624" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1724732883974" />
+    <state x="391" y="81" width="583" height="624" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1724734442228" />
+    <state x="-977" y="30" width="672" height="678" key="search.everywhere.popup" timestamp="1725592689756">
+      <screen x="-1280" y="-181" width="1280" height="984" />
+    </state>
+    <state x="-977" y="30" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1280.-181.1280.984@-1280.-181.1280.984" timestamp="1725592689756" />
   </component>
 </project>

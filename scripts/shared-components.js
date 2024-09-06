@@ -5,13 +5,13 @@ export async function buildFooterComponent() {
     const footerContent = `
         <hr>
         <p>
-            <a href="/des_moines_showpage/index.html">Upcoming Shows</a>
+            <a href="./index.html">Upcoming Shows</a>
         </p>
         <p>
-            <a href="/des_moines_showpage/all-shows.html">All Shows</a>
+            <a href="./all-shows.html">All Shows</a>
         </p>
         <p>
-            <a href="/des_moines_showpage/about.html">About</a>
+            <a href="./about.html">About</a>
         </p>
         <hr>
         <p>
