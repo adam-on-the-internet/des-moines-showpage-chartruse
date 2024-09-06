@@ -30,9 +30,17 @@
     - Add UI display for new optional details
     - Rework UI footer
     - Remove Date Debug UI Header
+- 9/5/24 - Adam C - 9:50pm-10:50pm (1:00)
+    - Setup site deployment with Netlify
+    - Fix minor issues around site linking
+    - Fix issues with About page loading wrong
+    - Build out individual show page
+    - Modify some display for each show
+    - Load a batch of September shows for The Lift
 - Next Up...
+    - Make show display more compact
+    - Add basic styling
     - New "all" shows page
-    - Single show page
     - Donate page
     - About page text
     - Manage Venue List in API, return to UI as well
