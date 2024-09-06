@@ -1,10 +1,8 @@
-export function addContentToDiv(id, content) {
-    const newDiv = document.createElement('div');
-    newDiv.innerHTML = content;
-    document.getElementById(id).appendChild(newDiv);
+export function replaceDivContent(id, content) {
+    document.getElementById(id).innerHTML = content;
 }
 
-export function addShowContent(showDisplayContent, show, venues) {
+export function addShowContent(showDisplayContent, show, venues, linkToShow) {
     showDisplayContent += `<hr>`;
     showDisplayContent = addParagraphIfExists(showDisplayContent, show.title, show.title)
     showDisplayContent = addParagraphIfExists(showDisplayContent, show.subtitle, show.subtitle)
@@ -22,8 +20,10 @@ export function addShowContent(showDisplayContent, show, venues) {
     showDisplayContent = addParagraphIfExists(showDisplayContent, show.ageLimit, show.ageLimit)
     showDisplayContent = addParagraphIfExists(showDisplayContent, show.ticketPrice, show.ticketPrice)
     showDisplayContent = addParagraphIfExists(showDisplayContent, show.genre, show.genre)
-    showDisplayContent = addParagraphLinkIfExists(showDisplayContent, show.showDetailsURL, show.showDetailsURL, "Show Details")
-    showDisplayContent = addParagraphLinkIfExists(showDisplayContent, show._id, `/des_moines_showpage/show.html?show=${show._id}`, "More Details")
+    showDisplayContent = addParagraphLinkIfExists(showDisplayContent, show.showDetailsURL, show.showDetailsURL, "Learn More")
+    if (linkToShow) {
+        showDisplayContent = addParagraphLinkIfExists(showDisplayContent, show._id, `./show.html?show=${show._id}`, "...")
+    }
     return showDisplayContent;
 }
 
@@ -62,11 +62,11 @@ function getMatchingVenue(venues, show) {
     return matchingVenue;
 }
 
-export function buildShowsContentWithVenueDetails(shows, venues) {
+export function buildShowsContentWithVenueDetails(shows, venues, linkToShow) {
     let showsDisplayContent = "";
     for (let i = 0; i < shows.length; i++) {
         const show = shows[i];
-        showsDisplayContent = addShowContent(showsDisplayContent, show, venues);
+        showsDisplayContent = addShowContent(showsDisplayContent, show, venues, linkToShow);
     }
     return showsDisplayContent;
 }

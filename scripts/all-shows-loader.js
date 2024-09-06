@@ -1,6 +1,6 @@
 import {buildFooterComponent} from "./shared-components.js"
 import {retrieveAllShowsInDesMoines, retrieveVenues} from "./rest-util.js"
-import {addContentToDiv, buildShowsContentWithVenueDetails} from "./document-builder.js"
+import {replaceDivContent, buildShowsContentWithVenueDetails} from "./document-builder.js"
 
 async function loadAllVenues() {
     const venues = await retrieveVenues();
@@ -8,9 +8,9 @@ async function loadAllVenues() {
 }
 
 function setupAllShows(allShows, allVenues) {
-    const allShowsDisplayContent = buildShowsContentWithVenueDetails(allShows, allVenues);
+    const allShowsDisplayContent = buildShowsContentWithVenueDetails(allShows, allVenues, true);
     const allShowsDisplayId = 'all-shows-display';
-    addContentToDiv(allShowsDisplayId, allShowsDisplayContent);
+    replaceDivContent(allShowsDisplayId, allShowsDisplayContent);
 }
 
 async function setupAllShowsInDesMoines(venues) {

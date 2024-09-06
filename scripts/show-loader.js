@@ -1,19 +1,30 @@
 import {buildFooterComponent} from "./shared-components.js"
-import {retrieveShowDetails} from "./rest-util.js"
 import {fetchParam} from "./query-param-util.js"
+import {retrieveShowDetails, retrieveVenues} from "./rest-util.js";
+import {replaceDivContent, buildShowsContentWithVenueDetails} from "./document-builder.js";
 
-function loadShowIdParam() {
-    const showId = fetchParam("show")
-    loadShowDetails(showId);
+async function loadAllVenues() {
+    const venues = await retrieveVenues();
+    setupShow(venues);
 }
 
-async function loadShowDetails(showId) {
-    const show = await retrieveShowDetails(showId)
-    console.log(show);
-//    TODO actually use show details in webpage
+function getShowId() {
+    return fetchParam("show")
+}
+
+function setupShowDisplay(show, allVenues) {
+    const showDisplayContent = buildShowsContentWithVenueDetails([show], allVenues, false);
+    const showDisplayId = 'show-display';
+    replaceDivContent(showDisplayId, showDisplayContent);
+}
+
+async function setupShow(venues) {
+    const showId = getShowId();
+    const show = await retrieveShowDetails(showId);
+    setupShowDisplay(show, venues);
 }
 
 $(document).ready(function () {
-    loadShowIdParam();
+    loadAllVenues();
     buildFooterComponent();
 });

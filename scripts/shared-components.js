@@ -1,4 +1,4 @@
-import {addContentToDiv} from "./document-builder.js"
+import {replaceDivContent} from "./document-builder.js"
 
 export async function buildFooterComponent() {
     const currentYear = new Date().getFullYear();
@@ -20,5 +20,5 @@ export async function buildFooterComponent() {
             </a>
         </p>`
     const footerId = "footer";
-    addContentToDiv(footerId, footerContent);
+    replaceDivContent(footerId, footerContent);
 }
