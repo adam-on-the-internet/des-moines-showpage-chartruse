@@ -37,6 +37,8 @@
     - Build out individual show page
     - Modify some display for each show
     - Load a batch of September shows for The Lift
+- 10/24/24 - Adam C - 9:45pm-? ()
+    - Move Venue data into database, return dynamically
 - Next Up...
     - Make show display more compact
     - Add basic styling

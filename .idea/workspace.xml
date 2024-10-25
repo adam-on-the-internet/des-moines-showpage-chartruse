@@ -12,15 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b4875db-37c7-4680-86ba-99d8b217aa89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all-shows.html" beforeDir="false" afterPath="$PROJECT_DIR$/all-shows.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/all-shows-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/all-shows-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/document-builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/document-builder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/shared-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/shared-components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/show-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/show-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/rest-util.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/rest-util.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adam-on-the-internet" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -71,7 +63,11 @@
       <workItem from="1724640854633" duration="2729000" />
       <workItem from="1724732193548" duration="2575000" />
       <workItem from="1725418840686" duration="44000" />
-      <workItem from="1725592679674" duration="1548000" />
+      <workItem from="1725592679674" duration="2088000" />
+      <workItem from="1725995047523" duration="202000" />
+      <workItem from="1726452062581" duration="8000" />
+      <workItem from="1726504757867" duration="82000" />
+      <workItem from="1729824590085" duration="1632000" />
     </task>
     <servers />
   </component>
@@ -91,6 +87,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1725995246687">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1725995246687" />
     <state x="-914" y="-72" width="555" height="844" key="find.popup" timestamp="1725594167565">
       <screen x="-1280" y="-181" width="1280" height="984" />
     </state>

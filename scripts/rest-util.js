@@ -21,18 +21,7 @@ export async function retrieveShowDetails(showId) {
 }
 
 export async function retrieveVenues() {
-    // TODO actually load venues from API
-    return [
-        {
-            "name": "xBk",
-            "url": "https://xbklive.com/",
-            "address": "1159 24th Street, Des Moines, IA 50311"
-        },
-        {
-            "name": "the LiFT",
-            "url": "https://www.dmlift.com/",
-            "address": "222 4th Street, Des Moines, IA 50309"
-        },
-    ];
+    const allVenuesResponse = await fetch(`${host}/venue`);
+    return await allVenuesResponse.json();
 }
 
