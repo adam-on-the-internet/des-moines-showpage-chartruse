@@ -37,13 +37,15 @@
     - Build out individual show page
     - Modify some display for each show
     - Load a batch of September shows for The Lift
-- 10/24/24 - Adam C - 9:45pm-? ()
+- 10/24/24 - Adam C - 9:45pm-11:45pm (2:00)
     - Move Venue data into database, return dynamically
     - Improve show display, make it more compact
     - Make footer more compact
+    - Make basic navbar
+    - Add basic starter styling
 - Next Up...
-    - Make Navbar
-    - Add basic styling
+    - Improve styling
+    - Group shows together by date
     - Add more Show fields (flyer link, show link, band links, bands)
     - Add show through UI
     - Edit show through UI

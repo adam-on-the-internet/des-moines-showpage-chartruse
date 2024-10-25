@@ -11,9 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b4875db-37c7-4680-86ba-99d8b217aa89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/styles/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WORKLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORKLOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all-shows.html" beforeDir="false" afterPath="$PROJECT_DIR$/all-shows.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/about-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/about-loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/all-shows-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/all-shows-loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/document-builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/document-builder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index-loader.js" afterDir="false" />
@@ -73,7 +77,7 @@
       <workItem from="1725995047523" duration="202000" />
       <workItem from="1726452062581" duration="8000" />
       <workItem from="1726504757867" duration="82000" />
-      <workItem from="1729824590085" duration="4492000" />
+      <workItem from="1729824590085" duration="6710000" />
     </task>
     <servers />
   </component>
@@ -103,10 +107,14 @@
     <state x="-914" y="-72" width="555" height="844" key="find.popup/0.0.1366.728/-1280.-181.1280.984@-1280.-181.1280.984" timestamp="1725594167565" />
     <state x="391" y="81" width="583" height="624" key="find.popup/0.0.1366.728/-1280.-181.1280.984@0.0.1366.728" timestamp="1729826856320" />
     <state x="391" y="81" width="583" height="624" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1724734442228" />
-    <state x="323" y="156" width="718" height="502" key="search.everywhere.popup" timestamp="1729829413920">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1729830653334">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728/-1280.-181.1280.984@0.0.1366.728" timestamp="1729830653334" />
+    <state x="323" y="156" width="718" height="502" key="search.everywhere.popup" timestamp="1729831595703">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-977" y="30" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/-1280.-181.1280.984@-1280.-181.1280.984" timestamp="1725593775287" />
-    <state x="323" y="156" width="718" height="502" key="search.everywhere.popup/0.0.1366.728/-1280.-181.1280.984@0.0.1366.728" timestamp="1729829413920" />
+    <state x="323" y="156" width="718" height="502" key="search.everywhere.popup/0.0.1366.728/-1280.-181.1280.984@0.0.1366.728" timestamp="1729831595703" />
   </component>
 </project>

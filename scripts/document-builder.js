@@ -123,5 +123,5 @@ export function buildShowsContentWithVenueDetails(shows, venues) {
         const show = shows[i];
         showsDisplayContent = addShowContentV2(showsDisplayContent, show, venues);
     }
-    return showsDisplayContent;
+    return showsDisplayContent + "<hr>";
 }

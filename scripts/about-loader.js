@@ -1,5 +1,5 @@
-import {buildFooterComponent} from "./shared-components.js"
+import {buildGenericComponents} from "./shared-components.js"
 
 $(document).ready(function () {
-    buildFooterComponent();
+    buildGenericComponents();
 });

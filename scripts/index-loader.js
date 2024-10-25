@@ -1,4 +1,4 @@
-import {buildFooterComponent} from "./shared-components.js"
+import {buildGenericComponents} from "./shared-components.js"
 import {retrieveUpcomingShowsInDesMoines, retrieveVenues} from "./rest-util.js"
 import {replaceDivContent, buildShowsContentWithVenueDetails} from "./document-builder.js"
 
@@ -20,5 +20,5 @@ async function loadUpcomingShows(venues) {
 
 $(document).ready(function () {
     loadAllVenues();
-    buildFooterComponent();
+    buildGenericComponents();
 });

@@ -1,4 +1,4 @@
-import {buildFooterComponent} from "./shared-components.js"
+import {buildGenericComponents} from "./shared-components.js"
 import {fetchParam} from "./query-param-util.js"
 import {retrieveShowDetails, retrieveVenues} from "./rest-util.js";
 import {replaceDivContent, buildShowsContentWithVenueDetails} from "./document-builder.js";
@@ -26,5 +26,5 @@ async function setupShow(venues) {
 
 $(document).ready(function () {
     loadAllVenues();
-    buildFooterComponent();
+    buildGenericComponents();
 });
