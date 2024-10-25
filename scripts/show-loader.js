@@ -13,7 +13,7 @@ function getShowId() {
 }
 
 function setupShowDisplay(show, allVenues) {
-    const showDisplayContent = buildShowsContentWithVenueDetails([show], allVenues, false);
+    const showDisplayContent = buildShowsContentWithVenueDetails([show], allVenues);
     const showDisplayId = 'show-display';
     replaceDivContent(showDisplayId, showDisplayContent);
 }

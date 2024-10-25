@@ -39,14 +39,14 @@
     - Load a batch of September shows for The Lift
 - 10/24/24 - Adam C - 9:45pm-? ()
     - Move Venue data into database, return dynamically
+    - Improve show display, make it more compact
+    - Make footer more compact
 - Next Up...
-    - Make show display more compact
+    - Make Navbar
     - Add basic styling
-    - New "all" shows page
-    - Donate page
-    - About page text
-    - Manage Venue List in API, return to UI as well
     - Add more Show fields (flyer link, show link, band links, bands)
     - Add show through UI
     - Edit show through UI
     - Delete show through UI
+    - Donate page
+    - About page text update

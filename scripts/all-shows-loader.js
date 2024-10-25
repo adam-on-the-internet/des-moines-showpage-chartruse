@@ -8,7 +8,7 @@ async function loadAllVenues() {
 }
 
 function setupAllShows(allShows, allVenues) {
-    const allShowsDisplayContent = buildShowsContentWithVenueDetails(allShows, allVenues, true);
+    const allShowsDisplayContent = buildShowsContentWithVenueDetails(allShows, allVenues);
     const allShowsDisplayId = 'all-shows-display';
     replaceDivContent(allShowsDisplayId, allShowsDisplayContent);
 }

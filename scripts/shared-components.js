@@ -5,16 +5,9 @@ export async function buildFooterComponent() {
     const footerContent = `
         <hr>
         <p>
-            <a href="./index.html">Upcoming Shows</a>
-        </p>
-        <p>
-            <a href="./all-shows.html">All Shows</a>
-        </p>
-        <p>
-            <a href="./about.html">About</a>
-        </p>
-        <hr>
-        <p>
+            <a href="./index.html">Upcoming Shows</a> | 
+            <a href="./all-shows.html">All Shows</a> | 
+            <a href="./about.html">About</a> | 
             <a href="https://www.adamontheinternet.com" target="_blank">
             © Adam on the Internet ${currentYear} 
             </a>

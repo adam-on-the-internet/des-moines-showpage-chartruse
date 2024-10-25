@@ -8,7 +8,7 @@ async function loadAllVenues() {
 }
 
 function setupUpcomingShows(upcomingShows, venues) {
-    const upcomingShowsDisplayContent = buildShowsContentWithVenueDetails(upcomingShows, venues, true);
+    const upcomingShowsDisplayContent = buildShowsContentWithVenueDetails(upcomingShows, venues);
     const upcomingShowsDisplayId = 'upcoming-shows-display';
     replaceDivContent(upcomingShowsDisplayId, upcomingShowsDisplayContent);
 }
