@@ -31,6 +31,11 @@ export async function buildFooterComponent() {
     const content = `
         <div id="footer-content">  
         <p>
+            <a href="https://www.iowatransmutualaidfund.org/" target="_blank">
+            Donate to Iowa Trans Mutual Aid Fund
+            </a>
+        </p>
+        <p>
             <a href="https://www.adamontheinternet.com" target="_blank">
             © Adam on the Internet ${currentYear} 
             </a>

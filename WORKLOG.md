@@ -43,6 +43,8 @@
     - Make footer more compact
     - Make basic navbar
     - Add basic starter styling
+- 10/27/24 - Adam C - 10:45pm-11:00pm (0:15)
+    - Add donate link
 - Next Up...
     - Improve styling
     - Group shows together by date
@@ -50,5 +52,4 @@
     - Add show through UI
     - Edit show through UI
     - Delete show through UI
-    - Donate page
     - About page text update
