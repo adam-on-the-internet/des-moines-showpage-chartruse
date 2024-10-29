@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../des-moines-showpage-teal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -72,6 +72,9 @@
       <workItem from="1730088335021" duration="569000" />
       <workItem from="1730089947237" duration="17000" />
       <workItem from="1730166745328" duration="692000" />
+      <workItem from="1730167820529" duration="637000" />
+      <workItem from="1730168842263" duration="438000" />
+      <workItem from="1730170070777" duration="268000" />
     </task>
     <servers />
   </component>

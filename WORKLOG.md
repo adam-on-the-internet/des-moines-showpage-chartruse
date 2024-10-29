@@ -45,10 +45,20 @@
     - Add basic starter styling
 - 10/27/24 - Adam C - 10:45pm-11:00pm (0:15)
     - Add donate link
-- 10/28/24 - Adam C - 9:00pm-? (?)
+- 10/28/24 - Adam C - 9:00pm-10:00pm (1:00)
     - Start "teal" edition (angular)
+    - Update Angular & Node
+- 10/28/24 - Adam C - 10:45pm-11:15pm (0:30)
+    - Get boilerplate TEAL setup
+    - Deploy TEAL with Netlify
 - Next Up...
+    - "teal" edition (angular)
+        - upcoming showpage
+        - form (add show)
+        - setup styling
     - "maroon" edition (react)
+        - upcoming showpage
+        - setup styling
     - calendar view
     - Improve styling
     - Group shows together by date
