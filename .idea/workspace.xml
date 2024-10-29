@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b4875db-37c7-4680-86ba-99d8b217aa89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/shared-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/shared-components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WORKLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORKLOG.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adam-on-the-internet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../des-moines-showpage-teal" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -68,7 +68,10 @@
       <workItem from="1726452062581" duration="8000" />
       <workItem from="1726504757867" duration="82000" />
       <workItem from="1729824590085" duration="7112000" />
-      <workItem from="1730087598976" duration="40000" />
+      <workItem from="1730087598976" duration="128000" />
+      <workItem from="1730088335021" duration="569000" />
+      <workItem from="1730089947237" duration="17000" />
+      <workItem from="1730166745328" duration="692000" />
     </task>
     <servers />
   </component>
@@ -88,9 +91,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1725995246687">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1730167273078">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/-1280.-181.1280.984@0.0.1366.728" timestamp="1730167273078" />
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1725995246687" />
     <state x="391" y="81" width="583" height="624" key="find.popup" timestamp="1729826856320">
       <screen x="0" y="0" width="1366" height="728" />

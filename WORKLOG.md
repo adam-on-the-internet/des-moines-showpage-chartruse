@@ -45,7 +45,11 @@
     - Add basic starter styling
 - 10/27/24 - Adam C - 10:45pm-11:00pm (0:15)
     - Add donate link
+- 10/28/24 - Adam C - 9:00pm-? (?)
+    - Start "teal" edition (angular)
 - Next Up...
+    - "maroon" edition (react)
+    - calendar view
     - Improve styling
     - Group shows together by date
     - Add more Show fields (flyer link, show link, band links, bands)
