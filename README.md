@@ -5,7 +5,7 @@
 
 ## Other Des Moines Showpage Repositories
 
-- [Chartruse Edition - Vanilla HTML/JS/CSS](https://github.com/adam-on-the-internet/des_moines_showpage)
+- [Chartruse Edition - Vanilla HTML/JS/CSS](https://github.com/adam-on-the-internet/des-moines-showpage-chartruse)
 - [Teal Edition - Angular](https://github.com/adam-on-the-internet/des-moines-showpage-teal)
 - [Maroon Edition - React]()
 - [Backend - NodeJS/Express/Mongo](https://github.com/adam-on-the-internet/basic-express-app)
